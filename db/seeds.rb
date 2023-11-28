@@ -5,3 +5,29 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+events = [
+  {
+    "name"=>"BugSmash",
+    "location"=>"Denver, CO",
+    "price"=>"0.0",
+    "starts_at"=>"2023-07-10T00:00:00.000Z",
+    "description"=>"A fun evening fo bug smashing!"
+  },
+  {
+    "name"=>"Hackathon",
+    "location"=>"Austin, TX",
+    "price"=>"15.0",
+    "starts_at"=>"2023-07-31T00:00:00.000Z",
+    "description"=>"Hunker down and hack away!"
+  },
+  {
+    "name"=>"Kata Camp",
+    "location"=>"Dallas, TX",
+    "price"=>"75.0",
+    "starts_at"=>"2023-08-31T00:00:00.000Z",
+    "description"=>"Practice your craft!"
+  }
+]
+
+Event.create(events)
