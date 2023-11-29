@@ -8,25 +8,37 @@
 
 events = [
   {
-    "name"=>"BugSmash",
-    "location"=>"Denver, CO",
-    "price"=>"0.0",
-    "starts_at"=>"2023-07-10T00:00:00.000Z",
-    "description"=>"A fun evening fo bug smashing!"
+    name: 'BugSmash',
+    location: 'Denver, CO',
+    price: 0.00,
+    starts_at: 30.days.from_now,
+    description: %{
+      Join us for a fun evening of bug smashing! It's a great
+      way to get involved in open source projects whether you're
+      reporting bugs, fixing bugs, or even creating
+      a few bugs!
+    }.squish
   },
   {
-    "name"=>"Hackathon",
-    "location"=>"Austin, TX",
-    "price"=>"15.0",
-    "starts_at"=>"2023-07-31T00:00:00.000Z",
-    "description"=>"Hunker down and hack away!"
+    name: 'Hackathon',
+    location: 'Austin, TX',
+    price: 15.00,
+    starts_at: 45.days.from_now,
+    description: %{
+      Got an awesome app idea you've been itching to work on? Hunker
+      down and hack away! This is an intense, focused day of hacking
+      on anything you want. The entry fee goes toward a bounty of cash
+      and prizes for winners in a variety of categories.
+    }.squish
   },
   {
-    "name"=>"Kata Camp",
-    "location"=>"Dallas, TX",
-    "price"=>"75.0",
-    "starts_at"=>"2023-08-31T00:00:00.000Z",
-    "description"=>"Practice your craft!"
+    name: 'Kata Camp',
+    location: 'Dallas, TX',
+    price: 75.00,
+    starts_at: 65.days.from_now,
+    description: %{
+      Kata Camp is where developers go to practice their craft without interruptions. Skip the status reports and stand-up meetings of a typical project. Just get 'er done! Price includes a buffet lunch and a leather-bound journal to record your kata achievements.
+    }.squish
   }
 ]
 
