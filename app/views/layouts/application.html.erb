@@ -9,21 +9,10 @@
     <%= javascript_importmap_tags %>
   </head>
   <body>
-    <header>
-      <nav>
-        <%= link_to image_tag("logo.png"), root_path %>
-        <ul>
-          <li>
-            <%= link_to "All Events", events_path %>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <%= render "layouts/header" %>
     <main class="content">
       <%= yield %>
     </main>
-    <footer>
-      Made in  <a href="http://pragmaticstudio.com">The Pragmatic Studio</a>
-    </footer>
+    <%= render "layouts/footer" %>
   </body>
 </html>
