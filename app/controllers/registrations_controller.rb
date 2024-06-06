@@ -11,7 +11,6 @@ class RegistrationsController < ApplicationController
   end
 
   def create
-
     @registration = @event.registrations.new(registration_params)
 
     if @registration.save
