@@ -106,3 +106,31 @@ Event.create!([
     image_file_name: "ninjas.png"
   }
 ])
+
+User.create!([
+  {
+    name: "Colin",
+    email: "colin@example.com",
+    password: "secret",
+    password_confirmation: "secret",
+    admin: true
+  },
+  {
+    name: "Larry",
+    email: "larry@example.com",
+    password: "secret",
+    password_confirmation: "secret",
+  },
+  {
+    name: "Moe",
+    email: "moe@example.com",
+    password: "secret",
+    password_confirmation: "secret",
+  },
+  {
+    name: "Curly",
+    email: "curly@example.com",
+    password: "secret",
+    password_confirmation: "secret",
+  },
+])
